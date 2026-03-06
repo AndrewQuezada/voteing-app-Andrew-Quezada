@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple voteing app</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Quick poll</h1>
+        <p class="questions">Do you like JavaScritp</p>
+
+        <div class="voting-buttons">
+            <button class="yes-btn" onclick="vote('yes')">👍Yes</button>
+            <button class="No-btn" onclick="vote('no')">👎no</button>
+            <button class="maybe-btn" onclick="vote('maybe')">🤔maybe</button>
+        </div>
+
+
+        <div class="results" id="results">
+            <h2>results</h2>
+            <p class="no-votes">No votes yet</p>
+        </div>
+
+        <div class="vote-list" id="voteList">
+            <h2>Vote Histroy</h2>
+            <div id="voteItems"></div>
+
+            <button class="rest-buttom" onclick="resetVotes()"> reset votes</button>
+        </div>
+    </div>
+    
+</body>
+</html>
